@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body
+{
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contenedor
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+.contenedor .Lado_izquierdo
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.TextoDePerfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.TextoDePerfil .imgbx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.TextoDePerfil.imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    left: 100%;
+    object-fit: cover;
+}
+.TextoDePerfil h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.TextoDePerfil h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactoInfo 
+{
+    padding-top: 40px;
+}
+.titulo
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    padding-top: 5;
+}
+.contactoInfo ul
+{
+    position: relative;    
+}
+.contactoInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactoInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:#03a9f4;
+}
+.contactoInfo ul li span{
+    color:#fff;
+    font-weight: 250;
+}
+.contactoInfo ul li i{
+    color:#03a9f4;
+    font-weight: 300;
+}
+
+.contactotInfoEducacion li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.contactotInfoEducacion h5{
+    color:#03a9f4;
+    font-weight: 500;
+}
+.contactotInfoEducacion h4.negritas
+{
+    color:#fff;
+    font-weight:600;
+}
+.contactotInfoEducacion h4{
+    color:#fff;
+    font-weight:300;
+}
+.contactoInfoLenguaje .porsentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+}
+.contactoInfoLenguaje li{
+    margin-bottom: 15px;
+    list-style: none;
+    color:#fff
+}
+.contactoInfoLenguaje .porsentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.contenedor .Lado_Derecho{
+    position: relative;
+    background: #fff;
+    padding: 33px;
+}
+.Perfil{
+    margin-bottom: 50px;
+}
+.Perfil:last-child
+{
+    margin-bottom: 0;
+}
+.titulo2{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+p{
+    color: #333;
+}
+.Perfil2 .Caja{
+    flex-direction: row;
+    margin: 20px 0;
+}
+.Perfil2 .Caja .añosEnLaEmpresa{
+    min-width: 150px;
+}
+.Perfil2 .Caja .añosEnLaEmpresa h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.Perfil2 .Caja .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    
+}
+.Perfil2 .Caja .text p{
+    margin: 0px 0px 30px 0px;
+}
+.habilidades .Caja{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades .Caja h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+.habilidades .Caja .porsentaje{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.habilidades .Caja .porsentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    margin: 0px 0px 40px 0px;
+}
+.intereses ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.intereses h2{
+    margin: 30px 0px 0px 0px;
+}
+.intereses ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px,0;
+}
+.intereses ul li .fa{
+    color:#03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+@media (max-width: 750px)
+{
+    .contenedor
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .intereses ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -1,0 +1,71 @@
+/**
+Este es un comentario en hojas de CSS.
+*/
+
+* {
+    color: blue;
+}
+/*El asterisco "*" funciona de comodin para todos los elementos.*/ 
+p, span {
+    color: red; /**Propiedad color*/
+    width: 400;
+}
+/*Para compartir propiedades se separan con coma.*/
+
+/**
+Para aplicar datos genericos en los elementos.
+*/
+h1 {
+    font-family: 'Roboto', sans-serif;; /*Propiedad para traer una fuente desde la web.*/
+    border: 1px solid black; /*Propiedad borde*/
+    padding: 5px; /*Propiedad padding*/
+    margin: 30px; /*Propiedad margen*/
+    font-weight: bold; /*Propiedad negrita*/
+    color:blueviolet;
+}
+/**
+Para aplicar datos especificos en los elementos.
+*/
+h2 {
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 20px;
+    font-weight: bold;
+    color:aqua;
+}
+
+/*Otra manera de aplicar datos especificos*/
+
+h3 {
+    border: 1px solid black;
+    padding: 30px 15px 20px 10px;
+    margin: 30px 15px 20px 30px;
+    font-weight: bold;
+    color: yellowgreen
+}
+
+/*Empezamos a ejercitarnos*/
+
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+#Mi_Parrafo {
+    color: yellow;
+    font-size: 23px;
+    border: 1px solid black;
+}
+
+.EstaEsMiClase {
+    color: green;
+    font-weight: bold;
+}

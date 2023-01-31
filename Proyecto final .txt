@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico Final CV</title>
+    <link rel="stylesheet" type="text/css" href="C:\MathiCelularCursos\CSS\TrabajoPracticoFinal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body
+{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contenedor
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+.contenedor .Lado_izquierdo
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.TextoDePerfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.TextoDePerfil .imgbx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.TextoDePerfil.imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    left: 100%;
+    object-fit: cover;
+}
+.TextoDePerfil h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.TextoDePerfil h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactoInfo 
+{
+    padding-top: 40px;
+}
+.titulo
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    padding-top: 5;
+}
+.contactoInfo ul
+{
+    position: relative;    
+}
+.contactoInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactoInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:#03a9f4;
+}
+.contactoInfo ul li span{
+    color:#fff;
+    font-weight: 250;
+}
+.contactoInfo ul li i{
+    color:#03a9f4;
+    font-weight: 300;
+}
+
+.contactotInfoEducacion li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.contactotInfoEducacion h5{
+    color:#03a9f4;
+    font-weight: 500;
+}
+.contactotInfoEducacion h4.negritas
+{
+    color:#fff;
+    font-weight:600;
+}
+.contactotInfoEducacion h4{
+    color:#fff;
+    font-weight:300;
+}
+.contactoInfoLenguaje .porsentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+}
+.contactoInfoLenguaje li{
+    margin-bottom: 15px;
+    list-style: none;
+    color:#fff
+}
+.contactoInfoLenguaje .porsentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.contenedor .Lado_Derecho{
+    position: relative;
+    background: #fff;
+    padding: 33px;
+}
+.Perfil{
+    margin-bottom: 50px;
+}
+.Perfil:last-child
+{
+    margin-bottom: 0;
+}
+.titulo2{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+p{
+    color: #333;
+}
+.Perfil2 .Caja{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.Perfil2 .Caja .añosEnLaEmpresa{
+    min-width: 150px;
+}
+.Perfil2 .Caja .añosEnLaEmpresa h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.Perfil2 .Caja .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+.habilidades .Caja{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades .Caja h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+.habilidades .Caja .porsentaje{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.habilidades .Caja .porsentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.intereses ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.intereses ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px, 0;
+}
+.intereses ul li .fa{
+    color:03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+         <div class="Lado_izquierdo">
+            <div class="TextoDePerfil">
+                <div class="imgbx">
+                    <img src="C:\MathiCelularCursos\Imagenes\Screenshot_20200917-133807.png" height="200px" width="200px">
+                </div>
+                <h2>Daniel Toledo<br><span>Web Developer</span></h2>
+            </div>
+            <div class="contactoInfo">
+                <h3 class="titulo">Contacto info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">1131867780</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">mathiaz.carp14 @gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">www.miwebside.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">likendin.com/me</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Isidro Casanova, Buenos Aires, Argentina</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactotInfoEducacion">
+                <h3 class="titulo">Educacion</h3>
+                <ul>
+                    <li>
+                        <h5>2017-2021</h5>
+                        <h4 class="negritas">Tecnico Superior en Progamacion</h4>
+                        <h4>NameUniversity</h4>
+                    </li>
+                    <li>
+                        <h5>2013-2017</h5>
+                        <h4 class="negritas">Lenguaje de Programacion Phyton</h4>
+                        <h4>NameUniversity</h4>
+                    </li>
+                    <li>
+                        <h5>2010-2013</h5>
+                        <h4 class="negritas">Introduccion a la Programacion</h4>
+                        <h4>NameUniversity</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="contactoInfoLenguaje">
+                <h3 class="titulo">Lenguaje</h3>
+                <ul>
+                    <li>
+                        <span class="text">Ingles</span>
+                        <span class="porsentaje">
+                            <div style="width: 90%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Español</span>
+                        <span class="porsentaje">
+                            <div style="width: 48%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Portugués</span>
+                        <span class="porsentaje">
+                            <div style="width: 85%;"></div>
+                        </span>
+                    </li>
+                <ul>
+            </div>
+        </div>
+        <div class="Lado_Derecho">
+            <div class="Perfil">
+                <h2 class="titulo2">Perfil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit at ante eget tincidunt. Curabitur sagittis rhoncus iaculis. Aenean id magna ut purus blandit pretium vitae sagittis risus. Fusce faucibus pellentesque nisl a pellentesque. Praesent vel ante nisi. Aenean eu augue nisl. Donec ex mauris, egestas a mattis eu, vestibulum eu lacus.<br><br>Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi purus lectus, faucibus ut ante non, luctus egestas orci. Sed sodales blandit semper. Nunc enim nunc, egestas in hendrerit et, auctor ut orci. Duis vel porta dui. Sed ullamcorper, arcu et molestie facilisis, sapien nunc blandit nisl, sit amet rutrum velit sapien et mauris. Duis euismod mattis diam quis pretium. Fusce molestie felis sit amet semper sagittis. Aliquam purus massa, consequat eget egestas vitae, lacinia at tortor. Nulla rhoncus non augue ut sodales.</p>
+            </div>
+            <div class="Perfil2">
+                <h2 class="titulo2">Perfil</h2>
+                <div class="Caja">
+                    <div class="añosEnLaEmpresa">
+                        <h5>2019 - Actualidad</h5>
+                        <h5>Nombre de La Empresa</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Senior Ux Designer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies enim rutrum posuere feugiat.</p>
+                    </div>
+                    
+                    <div class="añosEnLaEmpresa">
+                        <h5>2017 - 2019</h5>
+                        <h5>Nombre de La Empresa</h5>
+                    </div>
+                    <div class="text">
+                        <h4>UI/Ux Designer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies enim rutrum posuere feugiat.</p>
+                    </div>
+                        
+                    <div class="añosEnLaEmpresa">
+                        <h5>2013 - 2017</h5>
+                        <h5>Nombre de La Empresa</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Junior Ux Designer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies enim rutrum posuere feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="habilidades">
+                <h2 class="titulo2">Habilidad de Lenguaje</h2>
+                <div class="Caja">
+                    <h4>CSS</h4>
+                    <div class="porsentaje">
+                        <div style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <h4>HTML</h4>
+                    <div class="porsentaje">
+                        <div style="width: 45%"></div>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <h4>Javascript</h4>
+                    <div class="porsentaje">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <h4>Python</h4>
+                    <div class="porsentaje">
+                        <div style="width: 35%"></div>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <h4>Sony Vegas</h4>
+                    <div class="porsentaje">
+                        <div style="width: 25%"></div>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <h4>Adobe XD</h4>
+                    <div class="porsentaje">
+                        <div style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="intereses">
+                <h2 class="titulo2">Intereses</h2>
+                <ul>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i>Video juegos</li>
+                    <li><i class="fa fa-futbol-o" aria-hidden="true"></i>Futbol</li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i>Leer</li>
+                    <li><i class="fa fa-cogs" aria-hidden="true"></i>Tecnologia</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
